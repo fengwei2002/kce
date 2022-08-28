@@ -1,5 +1,5 @@
 <template>
-    <MonacoEditor id="editor" lang="cpp" :options="{ theme: 'vs-dark' }" />
+    <MonacoEditor id="editor" lang="cpp" :options="{ theme: 'vs' }" />
 </template>
 
 <style>
