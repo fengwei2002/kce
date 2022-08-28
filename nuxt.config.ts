@@ -1,6 +1,7 @@
-import { defineNuxtConfig } from 'nuxt'
+import { defineNuxtConfig } from "nuxt";
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  modules: ['nuxt-monaco-editor']
-})
+    modules: ["nuxt-monaco-editor"],
+    monacoEditor: { lang: "zh-cn" },
+});
