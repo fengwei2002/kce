@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>browser-amd-editor</title>
+    <title>konng's code editor</title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
@@ -13,8 +13,6 @@
     <script src="../node_modules/monaco-editor/min/vs/loader.js"></script>
     <script>
         require.config({ paths: { vs: '../node_modules/monaco-editor/min/vs' } });
-
-
         require.config({
             'vs/nls': {
                 availableLanguages: {
@@ -22,9 +20,7 @@
                 }
             }
         });
-
         require(['vs/editor/editor.main'], function () {
-
             monaco.editor.defineTheme('KONNG', {
                 "inherit": true,
                 "base": "vs-dark",
@@ -289,7 +285,7 @@
                         "token": "entity.name.function"
                     },
                     {
-                        "foreground": "#E95678E6cc",
+                        "foreground": "#E95678E6",
                         "fontStyle": "normal",
                         "token": "entity.name.tag"
                     },
@@ -468,7 +464,6 @@
                     }
                 ],
                 "encodedTokensColors": []
-
             });
             var editor = monaco.editor.create(document.getElementById('container'), {
                 theme: 'KONNG',
