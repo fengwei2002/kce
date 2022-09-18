@@ -468,7 +468,8 @@
             var editor = monaco.editor.create(document.getElementById('container'), {
                 theme: 'KONNG',
                 value: [''].join('\n'),
-                language: 'cpp'
+                language: 'cpp', 
+                automaticLayout: true // <<== the important part
             });
         });
     </script>
